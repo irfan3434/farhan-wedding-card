@@ -49,10 +49,10 @@
     "title": "Our Moments",
     "autoplayMs": 3800,
     "images": [
-      { "src": "/public/gallery/1.jpeg", "alt": "Farhan and Minahil — photo 1" },
-      { "src": "/public/gallery/2.jpeg", "alt": "Farhan and Minahil — photo 2" },
-      { "src": "/public/gallery/3.jpeg", "alt": "Farhan and Minahil — photo 3" },
-      { "src": "/public/gallery/4.jpeg", "alt": "Farhan and Minahil — photo 4" }
+      { "src": "gallery/1.jpeg", "alt": "Farhan and Minahil — photo 1" },
+      { "src": "gallery/2.jpeg", "alt": "Farhan and Minahil — photo 2" },
+      { "src": "gallery/3.jpeg", "alt": "Farhan and Minahil — photo 3" },
+      { "src": "gallery/4.jpeg", "alt": "Farhan and Minahil — photo 4" }
     ]
   },
 
