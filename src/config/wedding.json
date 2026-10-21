@@ -11,7 +11,7 @@
     },
     "bride": {
       "name": "Minahil Akhtar",
-      "parents": "Daughter of Mr. & Mrs. Muhammad Akhtar",
+      "parents": "Daughter of Mr. & Mrs. Akhtar Hussain",
       "qualifications": "",
       "profession": ""
     }
@@ -42,6 +42,7 @@
     "start": "2026-12-19T18:00:00+05:00",
     "end": "2026-12-19T23:00:00+05:00",
     "timeZone": "Asia/Karachi",
+    "venueId": "baraat",
     "description": "Nikah & Baraat — we would be honoured by your presence."
   },
 
@@ -99,13 +100,44 @@
     ]
   },
 
-  "venue": {
-    "title": "The Venue",
-    "name": "Green Apple",
-    "address": "Ghalib Rd, Kamanwala, Sialkot, Pakistan",
-    "lat": 32.546809,
-    "lng": 74.587352,
-    "zoom": 15.04
+  "venues": {
+    "title": "The Venues",
+    "kicker": "Where to find us",
+    "places": [
+      {
+        "id": "mehndi",
+        "label": "Mehndi",
+        "date": "2026-12-18",
+        "time": "7:00 PM",
+        "name": "Sadiq Awan Marriage Hall",
+        "address": "Saddique Pura Awan Chowk, Pasrur Road, Sialkot",
+        "lat": 32.460603,
+        "lng": 74.5626288,
+        "zoom": 17
+      },
+      {
+        "id": "baraat",
+        "label": "Baraat",
+        "date": "2026-12-19",
+        "time": "6:00 PM",
+        "name": "The Heritage Club",
+        "address": "Fatima Jinnah Park, Aziz Shaheed Road, Cantt Rd, Sialkot Cantonment, Sialkot",
+        "lat": 32.5170131,
+        "lng": 74.5320057,
+        "zoom": 17
+      },
+      {
+        "id": "walima",
+        "label": "Walima",
+        "date": "2026-12-21",
+        "time": "7:00 PM",
+        "name": "Green Apple",
+        "address": "Ghalib Rd, Kamanwala, Sialkot, Pakistan",
+        "lat": 32.546809,
+        "lng": 74.587352,
+        "zoom": 15
+      }
+    ]
   },
 
   "footer": {

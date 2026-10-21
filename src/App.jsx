@@ -14,6 +14,9 @@ import Timeline from './sections/Timeline'
 import Venue from './sections/Venue'
 import Footer from './sections/Footer'
 
+// The venue used for the "Save the Date" calendar entry.
+const mainVenue = config.venues.places.find((p) => p.id === config.event.venueId) ?? config.venues.places[0]
+
 export default function App() {
   const [opened, setOpened] = useState(false)
   const [gateVisible, setGateVisible] = useState(true)
@@ -40,11 +43,11 @@ export default function App() {
           <Hero couple={config.couple} hero={config.hero} />
           <Welcome welcome={config.welcome} />
           <Scratch scratch={config.scratch} event={config.event} />
-          <SaveTheDate event={config.event} venue={config.venue} />
+          <SaveTheDate event={config.event} venue={mainVenue} />
           <Gallery gallery={config.gallery} />
           <Countdown countdown={config.countdown} event={config.event} />
           <Timeline timeline={config.timeline} />
-          <Venue venue={config.venue} />
+          <Venue venues={config.venues} />
           <Footer footer={config.footer} couple={config.couple} />
         </main>
       )}
