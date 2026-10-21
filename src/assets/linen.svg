@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 .45  0 0 0 0 .38  0 0 0 0 .26  0 0 0 .09 0"/>
+  </filter>
+  <filter id="weaveX" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".004 .9" numOctaves="2" seed="4" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 .5  0 0 0 0 .42  0 0 0 0 .3  0 0 0 .07 0"/>
+  </filter>
+  <filter id="weaveY" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".9 .004" numOctaves="2" seed="9" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 .5  0 0 0 0 .42  0 0 0 0 .3  0 0 0 .06 0"/>
+  </filter>
+  <rect width="320" height="320" fill="#f6efe2"/>
+  <rect width="320" height="320" filter="url(#weaveX)"/>
+  <rect width="320" height="320" filter="url(#weaveY)"/>
+  <rect width="320" height="320" filter="url(#grain)"/>
+</svg>

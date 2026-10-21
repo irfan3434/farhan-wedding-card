@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 1000">
+  <defs>
+    <radialGradient id="p1" cx=".45" cy=".35" r=".8">
+      <stop offset="0" stop-color="#fdece8"/>
+      <stop offset=".55" stop-color="#efc1ba"/>
+      <stop offset="1" stop-color="#cf8b89"/>
+    </radialGradient>
+    <radialGradient id="p2" cx=".5" cy=".4" r=".75">
+      <stop offset="0" stop-color="#f6cbc4"/>
+      <stop offset="1" stop-color="#b8646b"/>
+    </radialGradient>
+    <radialGradient id="p3" cx=".5" cy=".45" r=".7">
+      <stop offset="0" stop-color="#e9a39f"/>
+      <stop offset="1" stop-color="#9c4b54"/>
+    </radialGradient>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#647f55"/>
+      <stop offset=".6" stop-color="#97b083"/>
+      <stop offset="1" stop-color="#bccca6"/>
+    </linearGradient>
+    <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f6943"/>
+      <stop offset="1" stop-color="#8aa477"/>
+    </linearGradient>
+    <filter id="paint" x="-10%" y="-5%" width="120%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/>
+    </filter>
+
+    <g id="leaf">
+      <path d="M0 0C9-9 29-12 46 0C29 12 9 9 0 0Z" fill="url(#lg)"/>
+      <path d="M2 0C16-1 30-1 44 0" stroke="#4d6642" stroke-width=".8" fill="none" opacity=".55"/>
+    </g>
+    <g id="leafDark">
+      <path d="M0 0C9-8 27-10 40 0C27 10 9 8 0 0Z" fill="url(#lg2)"/>
+      <path d="M2 0C14-1 26-1 38 0" stroke="#3e5535" stroke-width=".7" fill="none" opacity=".5"/>
+    </g>
+    <path id="petal" d="M0-4C-14-6-22-18-14-27C-7-33 7-33 14-27C22-18 14-6 0-4Z"/>
+    <g id="rose">
+      <g fill="url(#p1)" stroke="#c07b7c" stroke-width=".5" stroke-opacity=".45">
+        <use href="#petal"/>
+        <use href="#petal" transform="rotate(72)"/>
+        <use href="#petal" transform="rotate(144)"/>
+        <use href="#petal" transform="rotate(216)"/>
+        <use href="#petal" transform="rotate(288)"/>
+      </g>
+      <g fill="url(#p2)" transform="rotate(36) scale(.66)">
+        <use href="#petal"/>
+        <use href="#petal" transform="rotate(72)"/>
+        <use href="#petal" transform="rotate(144)"/>
+        <use href="#petal" transform="rotate(216)"/>
+        <use href="#petal" transform="rotate(288)"/>
+      </g>
+      <g fill="url(#p3)" transform="rotate(10) scale(.38)">
+        <use href="#petal"/>
+        <use href="#petal" transform="rotate(72)"/>
+        <use href="#petal" transform="rotate(144)"/>
+        <use href="#petal" transform="rotate(216)"/>
+        <use href="#petal" transform="rotate(288)"/>
+      </g>
+      <circle r="5.5" fill="#a9555c"/>
+      <path d="M-2.5 1C-3.5-3 2.5-5 3.5-1C4.5 2.5-1 4.5-2 2C-2.8-.5.8-1.6 1 0" stroke="#7a3540" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <path d="M-11-17C-6-21 2-22 7-20M-17 6C-19 0-18-6-15-10" stroke="#fff" stroke-width="1.1" fill="none" opacity=".45" stroke-linecap="round"/>
+    </g>
+    <g id="bud">
+      <path d="M0 0C-6-6-6-16 0-23C6-16 6-6 0 0Z" fill="url(#p2)"/>
+      <path d="M0 0C-5-4-7-11-5-15C-2-10 0-6 0 0ZM0 0C5-4 7-11 5-15C2-10 0-6 0 0Z" fill="#7d9969"/>
+      <path d="M0 0V9" stroke="#6f8a5f" stroke-width="1.4"/>
+    </g>
+    <g id="berries">
+      <path d="M0 0L5-4M0 0L-4-6M0 0L1 7" stroke="#8f7a3e" stroke-width=".6"/>
+      <circle cx="5" cy="-4" r="2.1" fill="#c9a24a"/>
+      <circle cx="-4" cy="-6" r="1.8" fill="#d6b462"/>
+      <circle cx="1" cy="7" r="1.6" fill="#b8913c"/>
+      <circle cx="0" cy="0" r="1.3" fill="#c9a24a"/>
+    </g>
+  </defs>
+
+  <g filter="url(#paint)">
+    <!-- main stem: tiles seamlessly top-to-bottom -->
+    <path d="M40 0C72 90 10 170 40 250S70 420 38 500S8 680 40 750S8 910 40 1000" stroke="#768f63" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M56 300c14-6 24 4 17 12c-4 6-12 2-8-3M30 610c-14-4-20 8-12 13c5 3 10-2 6-6M58 880c12-8 24 0 18 9c-4 5-11 1-7-4" stroke="#7d9669" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+    <use href="#leaf" transform="translate(47 58) rotate(-28) scale(.9)"/>
+    <use href="#leafDark" transform="translate(52 82) rotate(22) scale(.85)"/>
+    <use href="#leaf" transform="translate(30 190) rotate(15) scale(1.05)"/>
+    <use href="#leafDark" transform="translate(28 214) rotate(-35) scale(.8)"/>
+    <use href="#leaf" transform="translate(58 330) rotate(-18) scale(1.1)"/>
+    <use href="#leafDark" transform="translate(60 356) rotate(32) scale(.9)"/>
+    <use href="#leaf" transform="translate(48 404) rotate(-48) scale(.8)"/>
+    <use href="#leaf" transform="translate(28 560) rotate(12) scale(1)"/>
+    <use href="#leafDark" transform="translate(24 588) rotate(-32) scale(.88)"/>
+    <use href="#leaf" transform="translate(22 650) rotate(42) scale(.85)"/>
+    <use href="#leaf" transform="translate(50 822) rotate(-24) scale(1.05)"/>
+    <use href="#leafDark" transform="translate(48 846) rotate(26) scale(.9)"/>
+    <use href="#leaf" transform="translate(30 932) rotate(-40) scale(.8)"/>
+
+    <use href="#bud" transform="translate(72 272) rotate(28)"/>
+    <use href="#bud" transform="translate(48 664) rotate(36) scale(.9)"/>
+    <use href="#bud" transform="translate(66 948) rotate(22) scale(.85)"/>
+
+    <use href="#berries" transform="translate(84 176)"/>
+    <use href="#berries" transform="translate(72 528) rotate(40)"/>
+    <use href="#berries" transform="translate(86 786) rotate(-20)"/>
+
+    <use href="#leaf" transform="translate(42 150) rotate(-62) scale(.75)"/>
+    <use href="#rose" transform="translate(42 132) scale(1.3)"/>
+    <use href="#leafDark" transform="translate(34 470) rotate(58) scale(.8)"/>
+    <use href="#rose" transform="translate(32 464) rotate(20) scale(1.1)"/>
+    <use href="#leaf" transform="translate(52 742) rotate(-70) scale(.8)"/>
+    <use href="#rose" transform="translate(46 724) rotate(-14) scale(1.4)"/>
+  </g>
+</svg>

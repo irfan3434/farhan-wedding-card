@@ -1,0 +1,120 @@
+{
+  "pageTitle": "Farhan & Minahil — Wedding Invitation",
+
+  "couple": {
+    "initials": ["F", "M"],
+    "groom": {
+      "name": "Farhan Ishtiaq",
+      "parents": "Son of Mr. & Mrs. Ishtiaq Ahmed",
+      "qualifications": "",
+      "profession": ""
+    },
+    "bride": {
+      "name": "Minahil Akhtar",
+      "parents": "Daughter of Mr. & Mrs. Muhammad Akhtar",
+      "qualifications": "",
+      "profession": ""
+    }
+  },
+
+  "gate": {
+    "eyebrow": "Together with their families",
+    "cta": "Tap to Open"
+  },
+
+  "hero": {
+    "eyebrow": "We're getting married"
+  },
+
+  "welcome": {
+    "title": "Welcome",
+    "message": "With hearts full of joy and gratitude, we invite you to share in the day our two families become one. Your love has shaped our story — it would mean the world to have you beside us as we begin this new chapter together."
+  },
+
+  "scratch": {
+    "title": "A Little Surprise",
+    "hint": "Scratch the heart to reveal our date",
+    "revealedNote": "We can't wait to celebrate with you"
+  },
+
+  "event": {
+    "title": "Wedding of Farhan & Minahil",
+    "start": "2026-12-19T18:00:00+05:00",
+    "end": "2026-12-19T23:00:00+05:00",
+    "timeZone": "Asia/Karachi",
+    "description": "Nikah & Baraat — we would be honoured by your presence."
+  },
+
+  "gallery": {
+    "title": "Our Moments",
+    "autoplayMs": 3800,
+    "images": [
+      { "src": "/public/gallery/1.jpeg", "alt": "Farhan and Minahil — photo 1" },
+      { "src": "/public/gallery/2.jpeg", "alt": "Farhan and Minahil — photo 2" },
+      { "src": "/public/gallery/3.jpeg", "alt": "Farhan and Minahil — photo 3" },
+      { "src": "/public/gallery/4.jpeg", "alt": "Farhan and Minahil — photo 4" }
+    ]
+  },
+
+  "countdown": {
+    "title": "Counting Down",
+    "doneMessage": "Today we celebrate!"
+  },
+
+  "timeline": {
+    "title": "The Celebrations",
+    "days": [
+      {
+        "date": "2026-12-16",
+        "label": "Nikkah",
+        "items": [
+          { "time": "7:00 PM", "title": "Nikkah Ceremony", "note": "A Sacred Journey Begins" }
+        ]
+      },
+      {
+        "date": "2026-12-18",
+        "label": "Mehndi",
+        "items": [
+          { "time": "7:00 PM", "title": "Mehndi Ceremony", "note": "Henna, flowers and family blessings" },
+          { "time": "8:00 PM", "title": "Qawwali Night", "note": "An evening of music under the lights" }
+        ]
+      },
+      {
+        "date": "2026-12-19",
+        "label": "Baraat",
+        "items": [
+          { "time": "6:00 PM", "title": "Baraat Arrival", "note": "Welcoming the groom's family" },
+          { "time": "7:00 PM", "title": "Dinner", "note": "A celebratory feast" },
+          { "time": "8:00 PM", "title": "Rukhsati", "note": "A fond farewell for the bride" }
+        ]
+      },
+      {
+        "date": "2026-12-21",
+        "label": "Walima",
+        "items": [
+          { "time": "7:00 PM", "title": "Reception", "note": "Hosted by the groom's family" },
+          { "time": "8:00 PM", "title": "Dinner", "note": "Dessert and good company to close the festivities" }
+        ]
+      }
+    ]
+  },
+
+  "venue": {
+    "title": "The Venue",
+    "name": "Green Apple",
+    "address": "Ghalib Rd, Kamanwala, Sialkot, Pakistan",
+    "lat": 32.546809,
+    "lng": 74.587352,
+    "zoom": 15.04
+  },
+
+  "footer": {
+    "message": "With love and gratitude",
+    "hashtag": "#FarhanWedsMinahil"
+  },
+
+  "music": {
+    "src": "music/background.mp3",
+    "volume": 0.45
+  }
+}
